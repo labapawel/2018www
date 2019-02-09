@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+.czat.niebieski {
+  font-family: 'Roboto', sans-serif;
+}
+.czat.niebieski #okno .belka {
+  background-color: #286eb5;
+}
+.czat.niebieski #okno .belka h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  padding: 12px;
+}
 .czat.niebieski #okno .messages .czat-data {
   display: none;
 }
@@ -6,7 +24,8 @@
   display: inline-block;
   width: 30px;
   height: 30px;
-  background: transparent url("../img/ikonazdjecie.png") no-repeat center center / 100% auto;
+  border-radius: 15px;
+  background: #286eb5 url("../img/czapka.png") no-repeat center bottom / 50% auto;
 }
 .czat.niebieski #okno .messages .czat-content {
   margin: 30px;
@@ -20,4 +39,3 @@
   background-color: #286eb5;
   color: #ebebeb;
 }
-/*# sourceMappingURL=chat.css.map */
