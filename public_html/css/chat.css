@@ -69,13 +69,13 @@
   padding: 20px;
   border-radius: 30px;
 }
-.czat.niebieski #okno .mess-list .messages .content .czat-content:nth-child(odd) {
-  background-color: #ebebeb;
-  color: #286eb5;
-}
-.czat.niebieski #okno .mess-list .messages .content .czat-content:nth-child(even) {
+.czat.niebieski #okno .mess-list .messages:nth-child(even) .content .czat-content {
   background-color: #286eb5;
   color: #ebebeb;
+}
+.czat.niebieski #okno .mess-list .messages:nth-child(odd) .content .czat-content {
+  background-color: #ebebeb;
+  color: #286eb5;
 }
 .czat.zielony {
   background-color: #d6d2d3;
@@ -142,11 +142,84 @@
   padding: 20px;
   border-radius: 30px;
 }
-.czat.zielony #okno .mess-list .messages .content .czat-content:nth-child(odd) {
+.czat.zielony #okno .mess-list .messages:nth-child(even) .content .czat-content {
+  background-color: #24e824;
+  color: #ebebeb;
+}
+.czat.zielony #okno .mess-list .messages:nth-child(odd) .content .czat-content {
   background-color: #ebebeb;
   color: #24e824;
 }
-.czat.zielony #okno .mess-list .messages .content .czat-content:nth-child(even) {
-  background-color: #24e824;
+.czat.fiolet {
+  background-color: #d6d2d3;
+  font-family: 'Roboto', sans-serif;
+}
+.czat.fiolet .header {
+  background-color: #fff;
+}
+.czat.fiolet .header span {
+  display: inline-block;
+  width: 33%;
+  font-size: 0;
+  height: 5vh;
+  background: #fff url("../img/aleChatlogo_fiolet.png") no-repeat center center / auto 60%;
+}
+.czat.fiolet #okno {
+  width: 70%;
+  float: right;
+  height: 95vh;
+}
+.czat.fiolet #okno .belka {
+  background-color: #683787;
+}
+.czat.fiolet #okno .belka h1 {
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  padding: 12px;
+}
+.czat.fiolet #okno .mess-list {
+  overflow-y: auto;
+  height: 100%;
+}
+.czat.fiolet #okno .mess-list .messages .name {
+  float: left;
+  width: 10%;
+  position: relative;
+  min-height: 100px;
+}
+.czat.fiolet #okno .mess-list .messages .name .czat-name {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 0;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background: #683787 url("../img/czapka.png") no-repeat center bottom / 50% auto;
+}
+.czat.fiolet #okno .mess-list .messages .content {
+  float: left;
+  width: 90%;
+  position: relative;
+  min-height: 100px;
+  padding: 5px;
+}
+.czat.fiolet #okno .mess-list .messages .content .czat-data {
+  display: none;
+}
+.czat.fiolet #okno .mess-list .messages .content .czat-content {
+  word-break: break-all;
+  padding: 20px;
+  border-radius: 30px;
+}
+.czat.fiolet #okno .mess-list .messages:nth-child(even) .content .czat-content {
+  background-color: #683787;
   color: #ebebeb;
+}
+.czat.fiolet #okno .mess-list .messages:nth-child(odd) .content .czat-content {
+  background-color: #ebebeb;
+  color: #683787;
 }

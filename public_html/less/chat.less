@@ -82,16 +82,30 @@
             border-radius:30px; 
                 
              
-                    &:nth-child(odd) {
-                        background-color: @tlo1;
-                        color: @tlo2;
-                    }
-                    &:nth-child(even) {
-                        background-color: @tlo2;
-                        color: @tlo1;
-                    }
+                    
             
                  }
+           }
+           
+           &:nth-child(even) 
+           {
+            .content 
+                { 
+                    .czat-content {
+                             background-color: @tlo2;
+                             color: @tlo1;
+                         }
+                }
+           }
+           &:nth-child(odd) 
+           {
+               .content 
+                    {
+                        .czat-content {
+                                 background-color: @tlo1;
+                                 color: @tlo2;
+                             }
+                    }
            }
          }
         }
@@ -109,6 +123,10 @@
     
     &.zielony {
         .czat_wariant(#ebebeb, #24e824, #2ea051, #d6d2d3,"../img/aleChatlogo_ziel.png");
+    }
+    
+    &.fiolet {
+        .czat_wariant(#ebebeb, #683787, #2ea051, #d6d2d3,"../img/aleChatlogo_fiolet.png");
     }
     
 }
