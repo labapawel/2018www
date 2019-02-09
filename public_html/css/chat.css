@@ -5,6 +5,7 @@
   src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
 }
 .czat.niebieski {
+  background-color: #d6d2d3;
   font-family: 'Roboto', sans-serif;
 }
 .czat.niebieski #okno .belka {

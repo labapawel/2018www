@@ -11,11 +11,7 @@
     </head>
     <body ng-app="myApp" ng-controller="myCtrl" class="czat niebieski">
         
-        <div class="ikon ikona-11"></div>
-        <div class="ikon ikona-44"></div>
-        <div class="ikon ikona-55"></div>
-        <div class="ikon ikona-87"></div>
-        
+    <div class="container">
         <div id="okno">
             <div class="belka">
                 <h1>{{$storage.name}}</h1>
@@ -34,6 +30,8 @@
             <input ng-model="szukaj.name" placeholder="szukaj">
             <button ng-click="wyslij()">Wyślij</button>
         </div>
+        
+    </div>
         
         <script>
         var app = angular.module('myApp', ['ngSanitize']);

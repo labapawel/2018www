@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-.czat_wariant(@tlo1; @tlo2; @online)
+.czat_wariant(@tlo1; @tlo2; @online; @bg)
 {
+    background-color:@bg; 
+    
     font-family: 'Roboto', sans-serif;
     
     #okno {
@@ -56,7 +58,7 @@
 .czat {
     
     &.niebieski {
-        .czat_wariant(#ebebeb, #286eb5, #2ea051);
+        .czat_wariant(#ebebeb, #286eb5, #2ea051, #d6d2d3);
     }
     
     
