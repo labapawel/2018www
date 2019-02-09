@@ -12,14 +12,31 @@
     <body ng-app="myApp" ng-controller="myCtrl" class="czat niebieski">
         
     <div class="container">
+        
+        <div class="header">
+            <div>
+                <span>AleCzat</span>
+            </div>
+            
+            
+        </div>
+                
+        
+        
         <div id="okno">
             <div class="belka">
                 <h1>{{$storage.name}}</h1>
             </div>
-            <div class="messages" ng-repeat="item in czatdata | orderBy:'id':true | filter: szukaj ">
-                    <div data-ala="ma" class="czat-name">Name: <span>{{item.name}}</span></div>
-                    <div class="czat-data">Data: <span>{{item.created_at}}</span></div>
-                    <div class="czat-content" ng-bind-html="item.content"></div>
+            <div class="mess-list">
+                <div class="messages" ng-repeat="item in czatdata | orderBy:'id':true | filter: szukaj ">
+                    <div class="name">
+                        <div data-ala="ma" class="czat-name">Name: <span>{{item.name}}</span></div>
+                    </div>
+                    <div class="content">
+                        <div class="czat-data">Data: <span>{{item.created_at}}</span></div>
+                        <div class="czat-content" ng-bind-html="item.content"></div>
+                    </div>    
+                </div>
             </div>
             <div></div>
         </div>
